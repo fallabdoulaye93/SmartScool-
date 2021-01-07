@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rq_benificiaire" value="name:IDINDIVIDU;datatype:int,name:MATRICULE;datatype:string,name:NOM;datatype:string,name:PRENOMS;datatype:string,name:NIVEAU;datatype:string,name:FILIERE;datatype:string" />
+	<infoitem key="UD_rq_mensualite" value="name:MT_VERSE;datatype:real,name:MT_RELIQUAT;datatype:real,name:DATEREGLMT;datatype:date,name:MONTANT;datatype:real,name:MOIS;datatype:string,name:IDINSCRIPTION;datatype:int" />
+	<infoitem key="UD_rq_historique_mensulaite" value="name:IDMENSUALITE;datatype:int,name:MOIS;datatype:string,name:MONTANT;datatype:real,name:DATEREGLMT;datatype:date,name:IDINSCRIPTION;datatype:int,name:IDETABLISSEMENT;datatype:int,name:MT_VERSE;datatype:real,name:MT_RELIQUAT;datatype:real" />
+	<infoitem key="UD_rq_etablissement" value="name:IDETABLISSEMENT;datatype:int,name:NOMETABLISSEMENT_;datatype:string,name:SIGLE;datatype:string,name:ADRESSE;datatype:string,name:TELEPHONE;datatype:string,name:REGLEMENTINTERIEUR;datatype:blob,name:VILLE;datatype:string,name:PAYS;datatype:string,name:DEVISE;datatype:string,name:FAX;datatype:string,name:MAIL;datatype:string,name:SITEWEB;datatype:string,name:LOGO;datatype:string,name:CAPITAL;datatype:string,name:FORM_JURIDIQUE;datatype:string,name:RC;datatype:string,name:NINEA;datatype:string,name:NUM_TV;datatype:int,name:PREFIXE;datatype:string" />
+</info>

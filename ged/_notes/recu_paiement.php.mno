@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rq_benificiaire" value="name:IDINDIVIDU;datatype:int,name:MATRICULE;datatype:string,name:NOM;datatype:string,name:PRENOMS;datatype:string,name:NIVEAU;datatype:string,name:FILIERE;datatype:string" />
+	<infoitem key="UD_rq_historique_mensulaite" value="name:IDMENSUALITE;datatype:int,name:MOIS;datatype:string,name:MONTANT;datatype:real,name:DATEREGLMT;datatype:date,name:IDINSCRIPTION;datatype:int,name:IDETABLISSEMENT;datatype:int,name:MT_VERSE;datatype:real,name:MT_RELIQUAT;datatype:real,name:id_type_paiment;datatype:int" />
+	<infoitem key="UD_rq_niveau" value="name:LIBELLE;datatype:string" />
+	<infoitem key="UD_rq_mensualite" value="name:MOIS;datatype:string,name:MONTANT;datatype:real,name:DATEREGLMT;datatype:date,name:IDINSCRIPTION;datatype:int,name:MT_VERSE;datatype:real,name:MT_RELIQUAT;datatype:real,name:id_type_paiment;datatype:int,name:libelle_paiement;datatype:string" />
+</info>

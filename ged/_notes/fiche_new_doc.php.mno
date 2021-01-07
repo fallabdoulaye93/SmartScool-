@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rq_typ_doc" value="name:IDTYPEDOCADMIN;datatype:int,name:LIBELLE;datatype:string,name:CONTENU;datatype:blob,name:IDETABLISSEMENT;datatype:int,name:IDMODELE_DOC;datatype:int" />
+	<infoitem key="UD_rq_anneescolaire" value="name:IDANNEESSCOLAIRE;datatype:int,name:LIBELLE_ANNEESSOCLAIRE;datatype:string,name:DATE_DEBUT;datatype:date,name:DATE_FIN;datatype:date,name:IDETABLISSEMENT;datatype:int" />
+	<infoitem key="UD_rq_doc" value="name:IDDOCADMIN;datatype:int,name:LIBELLE;datatype:string,name:MOTIF;datatype:string,name:DATEDELIVRANCE;datatype:date,name:IDTYPEDOCADMIN;datatype:int,name:IDETABLISSEMENT;datatype:int,name:IDINDIVIDU;datatype:int,name:IDANNEESSCOLAIRE;datatype:int,name:ID_AUTHORITE;datatype:int" />
+</info>

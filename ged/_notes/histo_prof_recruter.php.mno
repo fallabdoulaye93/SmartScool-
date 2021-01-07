@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rq_individu" value="name:IDRECRUTE_PROF;datatype:int,name:TARIF_HORAIRE;datatype:real,name:VOLUME_HORAIRE;datatype:int,name:MATRICULE;datatype:string,name:NOM;datatype:string,name:PRENOMS;datatype:string,name:matiere;datatype:string,name:classe;datatype:string,name:PHOTO_FACE;datatype:string" />
+</info>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rq_periode" value="name:IDPERIODE;datatype:int,name:NOM_PERIODE;datatype:string,name:DEBUT_PERIODE;datatype:date,name:FIN_FPERIODE;datatype:date,name:IDANNEESSCOLAIRE;datatype:int,name:IDETABLISSEMENT;datatype:int" />
+	<infoitem key="UD_rq_annee" value="name:IDANNEESSCOLAIRE;datatype:int,name:LIBELLE_ANNEESSOCLAIRE;datatype:string,name:DATE_DEBUT;datatype:date,name:DATE_FIN;datatype:date,name:IDETABLISSEMENT;datatype:int" />
+	<infoitem key="UD_rq_etablissement" value="name:IDETABLISSEMENT;datatype:int,name:NOMETABLISSEMENT_;datatype:string,name:SIGLE;datatype:string,name:ADRESSE;datatype:string,name:TELEPHONE;datatype:string,name:VILLE;datatype:string,name:PAYS;datatype:string,name:FAX;datatype:string,name:MAIL;datatype:string,name:SITEWEB;datatype:string,name:LOGO;datatype:string" />
+	<infoitem key="UD_rq_eleve" value="name:IDINDIVIDU;datatype:int,name:MATRICULE;datatype:string,name:NOM;datatype:string,name:PRENOMS;datatype:string,name:DATNAISSANCE;datatype:date,name:ADRES;datatype:string,name:TELMOBILE;datatype:string,name:TELDOM;datatype:string,name:COURRIEL;datatype:string,name:LOGIN;datatype:string,name:MP;datatype:string,name:CODE;datatype:string,name:BIOGRAPHIE;datatype:string,name:PHOTO_FACE;datatype:string,name:IDETABLISSEMENT;datatype:int,name:IDTYPEINDIVIDU;datatype:int,name:SEXE;datatype:int,name:IDPERE;datatype:int,name:IDMERE;datatype:int,name:IDTUTEUR;datatype:int,name:ANNEEBAC;datatype:int,name:NATIONNALITE;datatype:int,name:SIT_MATRIMONIAL;datatype:int,name:NUMID;datatype:string" />
+	<infoitem key="UD_rq_classe" value="name:lib;datatype:string,name:IDCLASSROOM;datatype:int,name:LIBELLE;datatype:string,name:IDNIVEAU;datatype:int,name:IDETABLISSEMENT;datatype:int,name:IDSERIE;datatype:int" />
+	<infoitem key="UD_rq_cc" value="name:moy;datatype:real" />
+	<infoitem key="UD_rw_exam" value="name:moy;datatype:real" />
+</info>

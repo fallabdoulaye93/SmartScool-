@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rq_periode" value="name:IDPERIODE;datatype:int,name:NOM_PERIODE;datatype:string,name:DEBUT_PERIODE;datatype:date,name:FIN_FPERIODE;datatype:date,name:IDANNEESSCOLAIRE;datatype:int,name:IDETABLISSEMENT;datatype:int" />
+	<infoitem key="UD_rq_clas" value="name:IDCLASSROOM;datatype:int,name:classe;datatype:string,name:niveau;datatype:string,name:LIBSERIE;datatype:string" />
+</info>
