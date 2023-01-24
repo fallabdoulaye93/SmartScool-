@@ -6,7 +6,7 @@ class Librairie
     {
         // Instanciation de la classe connexion
 //        $this->pdo = new PDO("mysql:host=localhost;dbname=sunuecole", "seeyni-faay", "passer123");
-        $this->pdo = new PDO("mysql:host=h2mysql11;dbname=fhbs_numheritlabscom230", "fhbs_sunuecoledb", "68qb5JmA");
+        $this->pdo = new PDO("mysql:host=mysql-layefall93.alwaysdata.net;dbname=layefall93_scool", "221763_root", "layeFALL93");
     }
     /******************************Fin*********************/
     function code_identification()
@@ -505,7 +505,7 @@ class Librairie
         $message .= "Vous pourrez d&eacute;sormais vous connecter au portail avec les param&egrave;tres d'acc&egrave;s suivants :<br />";
         $message .= "Login : " . $login . "<br />";
         $message .= "Mot de passe : " . $password . "<br />";
-        $message .= "<a target='_blank' href='http://www.numherit-labs.com/sunuecole'>Cliquer sur ce lien pour acc&eacute;der &aacute; votre compte.</a>";
+        $message .= "<a target='_blank' href='http://www.samaecole-labs.com/sunuecole'>Cliquer sur ce lien pour acc&eacute;der &aacute; votre compte.</a>";
         $message .= "<br />";
         $message .= "</p></td>";
         $message .= "</tr>";
@@ -534,7 +534,7 @@ class Librairie
         $message .= "Vous pourrez d&eacute;sormais vous connecter au portail avec les nouveaux param&egrave;tres d'acc&egrave;s suivants :<br />";
         $message .= "Login : " . $login . "<br />";
         $message .= "Mot de passe : " . $password . "<br />";
-        $message .= "<a target='_blank' href='http://www.numherit-labs.com/sunuecole'>Cliquer sur ce lien pour acc&eacute;der &aacute; votre compte.</a>";
+        $message .= "<a target='_blank' href='http://www.samaecole-labs.com/sunuecole'>Cliquer sur ce lien pour acc&eacute;der &aacute; votre compte.</a>";
         $message .= "<br />";
         $message .= "</p></td>";
         $message .= "</tr>";
@@ -563,7 +563,7 @@ class Librairie
         $message .= "Vous pourrez d&eacute;sormais vous connecter au portail avec les param&egrave;tres d'acc&egrave;s suivants :<br />";
         $message .= "Login : " . $login . "<br />";
         $message .= "Mot de passe : " . $password . "<br />";
-        $message .= "<a target='_blank' href='http://www.numherit-labs.com/sunuecole/PROFESSEURS/'>Cliquer sur ce lien pour acc&eacute;der &aacute; votre compte.</a>";
+        $message .= "<a target='_blank' href='http://www.samaecole-labs.com/sunuecole/PROFESSEURS/'>Cliquer sur ce lien pour acc&eacute;der &aacute; votre compte.</a>";
         $message .= "<br />";
         $message .= "</p></td>";
         $message .= "</tr>";
@@ -592,7 +592,7 @@ class Librairie
         $message .= "Vous pourrez d&eacute;sormais vous connecter au portail avec les param&egrave;tres d'acc&egrave;s suivants :<br />";
         $message .= "Login : " . $login . "<br />";
         $message .= "Mot de passe : " . $password . "<br />";
-        $message .= "<a target='_blank' href='http://www.numherit-labs.com/sunuecole/ELEVES/'>Cliquer sur ce lien pour acc&eacute;der &aacute; votre compte.</a>";
+        $message .= "<a target='_blank' href='http://www.samaecole-labs.com/sunuecole/ELEVES/'>Cliquer sur ce lien pour acc&eacute;der &aacute; votre compte.</a>";
         $message .= "<br />";
         $message .= "</p></td>";
         $message .= "</tr>";
@@ -621,7 +621,7 @@ class Librairie
         $message .= "Vous pourrez d&eacute;sormais vous connecter au portail avec les param&egrave;tres d'acc&egrave;s suivants :<br />";
         $message .= "Login : " . $login . "<br />";
         $message .= "Mot de passe : " . $password . "<br />";
-        $message .= "<a target='_blank' href='http://www.numherit-labs.com/sunuecole/PARENTS/'>Cliquer sur ce lien pour acc&eacute;der &aacute; votre compte.</a>";
+        $message .= "<a target='_blank' href='http://www.samaecole-labs.com/sunuecole/PARENTS/'>Cliquer sur ce lien pour acc&eacute;der &aacute; votre compte.</a>";
         $message .= "<br />";
         $message .= "</p></td>";
         $message .= "</tr>";
@@ -831,7 +831,7 @@ class Librairie
             }
             if($res === 0){
                 $messages .= "<br/>La regénération du token a échoué.<br/>Le token current expire dans moins de trois(3) jours.";
-                @alerteSMS('ibrahima.fall@numherit.com', 'Madiop GUEYE', $messages);
+                @alerteSMS('ibrahima.fall@samaecole.com', 'Madiop GUEYE', $messages);
             }
         }
         curl_close($ch);
@@ -890,7 +890,7 @@ class Librairie
                 if($err)
                 {
                     $messages = "CEMAD<br/>Erreur WS Envoi SMS Orange: " . $err . "</b>.<br/>Tel: ".$destinataire."<br/>Merci de faire le necessairee (Urgence).";
-                    $this->alerteSMS('ibrahima.fall@numherit.com', 'Ibrahima FALL', $messages);
+                    $this->alerteSMS('ibrahima.fall@samaecole.com', 'Ibrahima FALL', $messages);
                     echo -1;
                 }
                 else
@@ -904,13 +904,13 @@ class Librairie
                     else if (!array_key_exists('outboundSMSMessageRequest', $json) && array_key_exists('code', $json) && (int)$json->code === 41)
                     {
                         $messages = "CEMAD<br/>Le nombre de SMS restant dans le compte est arrive a epuisement.: <b>0 sms</b>.<br/>Merci de recharger le compte (Urgence).";
-                        $this->alerteSMS('ibrahima.fall@numherit.com', 'Ibrahima FALL 2', $messages);
+                        $this->alerteSMS('ibrahima.fall@samaecole.com', 'Ibrahima FALL 2', $messages);
                         echo -3;
                     }
                     else if (!array_key_exists('outboundSMSMessageRequest', $json))
                     {
                         $messages = "CEMAD<br/>Erreur WS Envoi SMS Orange: " . json_encode($json) . "</b>.<br/>Tel: ".$destinataire."<br/>Merci de faire le necessairee (Urgence).";
-                        $this->alerteSMS('ibrahima.fall@numherit.com', 'Ibrahima FALL 1', $messages);
+                        $this->alerteSMS('ibrahima.fall@samaecole.com', 'Ibrahima FALL 1', $messages);
                         echo -4;
                     }
                     else
@@ -920,7 +920,7 @@ class Librairie
                         if(($nb_sms_restant <= 500 && $nb_sms_restant % 10 === 0) || $nb_sms_restant <= 100)
                         {
                             $messages = "CEMAD<br/>Le nombre de SMS restant dans le compte est faible: <b>" . $nb_sms_restant . " sms</b>.<br/>Merci de recharger le compte (Urgence).";
-                            $this->alerteSMS('ibrahima.fall@numherit.com', 'Ibrahima FALL NUMH', $messages);
+                            $this->alerteSMS('ibrahima.fall@samaecole.com', 'Ibrahima FALL NUMH', $messages);
                         }
                     }
                 }

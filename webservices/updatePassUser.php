@@ -2,7 +2,7 @@
 require("lib/nusoap.php");
 require("lib.php");
 
-$namespace = "http://www.numherit-labs.com/sunuecole/webservices";
+$namespace = "http://www.samaecole-labs.com/sunuecole/webservices";
 $server = new soap_server();
 $server->debug_flag = false;
 $server->configureWSDL("SunuEcole Webservices", $namespace);

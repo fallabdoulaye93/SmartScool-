@@ -62,7 +62,7 @@ if ((isset($_POST['login']) && $_POST['login'] != '') && (isset($_POST['password
 <html lang="en" class="body-full-height">
 <head>
     <!-- META SECTION -->
-    <title>NUMHERIT - SunuEcole</title>
+    <title>SAMAECOLE - SunuEcole</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -125,7 +125,7 @@ if ((isset($_POST['login']) && $_POST['login'] != '') && (isset($_POST['password
         </div>
         <div class="login-footer">
             <div class="pull-left">
-                <a href="https://www.numherit.com">&copy; 2019 NUMHERIT</a>
+                <a href="https://www.samaecole.com">&copy; 2019 SAMAECOLE</a>
             </div>
 
         </div>

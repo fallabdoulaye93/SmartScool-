@@ -237,7 +237,7 @@
         
         <div class="footer-section">
             <div class="col-lg-offset-0">
-                <a href="https://www.numherit.com">&copy; 2016 NUMHERIT</a>
+                <a href="https://www.samaecole.com">&copy; 2016 SAMAECOLE</a>
             </div>
         </div>
         

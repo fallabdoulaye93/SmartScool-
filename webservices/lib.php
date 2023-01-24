@@ -1,15 +1,15 @@
 <?php
 
-$hostname_connexion = "fhbs.myd.sharedbox.com";
-$database_connexion = "fhbs_numheritlabscom230";
-$username_connexion = "fhbs_sunuecoledb";
-$password_connexion = "68qb5JmA";
+$hostname_connexion = "mysql-layefall93.alwaysdata.net";
+$database_connexion = "layefall93_scool";
+$username_connexion = "221763_root";
+$password_connexion = "layeFALL93";
 
 function Connection()
 {
     $conn = NULL;
     try {
-        $conn = new PDO("mysql:host=fhbs.myd.sharedbox.com;dbname=fhbs_numheritlabscom230", "fhbs_sunuecoledb", "68qb5JmA");
+        $this->pdo = new PDO("mysql:host=mysql-layefall93.alwaysdata.net;dbname=layefall93_scool", "221763_root", "layeFALL93");
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $conn;
     } catch (PDOException $e) {
@@ -225,7 +225,7 @@ function envoiLogin($destinataire, $prenom)
     $message .= "<tr>";
     $message .= "<td align='left' valign='top'><p>Votre Souscription à l'application sunuEcole vient d'&ecirc;tre validée.<br />";
     $message .= "Vous pourrez d&eacute;sormais vous connecter au portail en cliquant sur le lien suivant.<br />";
-    $message .= "<a target='_blank' href='https://www.numherit-labs.com/sunucloud/client/launchApp/5'>Cliquer sur ce lien pour acc&eacute;der &aacute; votre compte.</a>";
+    $message .= "<a target='_blank' href='https://www.samaecole-labs.com/sunucloud/client/launchApp/5'>Cliquer sur ce lien pour acc&eacute;der &aacute; votre compte.</a>";
     $message .= "<br />";
     $message .= "</p></td>";
     $message .= "</tr>";

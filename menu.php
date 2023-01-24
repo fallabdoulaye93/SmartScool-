@@ -264,10 +264,10 @@ $profil = $lib->securite_xss($_SESSION['profil']);
 
             <!--<div class="footer-section">
                 <div class="col-lg-offset-0">
-                    <a href="https://www.numherit.com">&copy; 2019 NUMHERIT</a>
+                    <a href="https://www.samaecole.com">&copy; 2019 SAMAECOLE</a>
                 </div>
             </div>-->
-            <footer class="footer text-center"> <a href="https://www.numherit.com">&copy; 2019 NUMHERIT SA</a></footer>
+            <footer class="footer text-center"> <a href="https://www.samaecole.com">&copy; 2019 SAMAECOLE SA</a></footer>
 
         </div>
 

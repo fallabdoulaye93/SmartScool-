@@ -245,7 +245,7 @@ $lib =  new Librairie();
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                <img src="assets/img/logo_numherit.png" width="178" height="49" alt=""/> </div>
+                <img src="assets/img/logo_samaecole.png" width="178" height="49" alt=""/> </div>
 
             </div>
         </div>

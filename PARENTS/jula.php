@@ -25,7 +25,7 @@ if (isset($_GET['mois'])) {
 if (isset($_GET['numfact'])) {
     $_SESSION['numfact'] = $_GET['numfact'];
 }
-$_SESSION['redirection'] = "http://www.numherit-labs.com/sunuecole/PARENTS/payment_ok.php";
+$_SESSION['redirection'] = "http://www.samaecole-labs.com/sunuecole/PARENTS/payment_ok.php";
 ?>
 <!-- START BREADCRUMB -->
 <ul class="breadcrumb">

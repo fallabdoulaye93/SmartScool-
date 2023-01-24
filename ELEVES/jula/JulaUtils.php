@@ -1,11 +1,11 @@
 <?php
 
 	/*****************************************************************************
-	Auteur du script : NUMHERIT
-	Société : NUMHERIT SARL
+	Auteur du script : SAMAECOLE
+	Sociï¿½tï¿½ : SAMAECOLE SARL
 	Date : 24/12/2012
 	Version : 1.0
-	Description :	Définition de fonctions communes aux marchand et serveur.
+	Description :	Dï¿½finition de fonctions communes aux marchand et serveur.
 	*****************************************************************************/
 
 
@@ -18,9 +18,9 @@ function generateDataString($trsdata, $nbparams, $hash) {
 	global $DBG;
 	$data="";
 	
-	// Le nombre de parametres est le premier element des données à générer. Il est sur 2 octets
+	// Le nombre de parametres est le premier element des donnï¿½es ï¿½ gï¿½nï¿½rer. Il est sur 2 octets
 	$data .= sprintf("%02d", $nbparams);
-	// Calculer maintenant la chaine qui contient les longueurs des  différentes variables
+	// Calculer maintenant la chaine qui contient les longueurs des  diffï¿½rentes variables
 	// D'abord la longueur de la signature SHA1
 	$fieldsLength = "040";
 
@@ -29,7 +29,7 @@ function generateDataString($trsdata, $nbparams, $hash) {
 	 $fieldsLength .= sprintf("%03d", strlen($val));
 	}
 
-	// Ajouter la chaîne contenant les longueurs des variables au résultat global
+	// Ajouter la chaï¿½ne contenant les longueurs des variables au rï¿½sultat global
 	$data .= $fieldsLength;
 
 	// Maintenant generer la chaine qui contient les valeurs des variables 
@@ -42,7 +42,7 @@ function generateDataString($trsdata, $nbparams, $hash) {
 		$fieldsValues .= $val;
 	}
 
-	// Ajouter la chaîne contenant les valeurs des variables au résultat global
+	// Ajouter la chaï¿½ne contenant les valeurs des variables au rï¿½sultat global
 	$data .= $fieldsValues;
 	if ($DBG) print "generateDataString: unscrumbled data=$data<br>\n";
 
@@ -74,10 +74,10 @@ function parseDataString($sid, $varDefArray) {
  		print "parseDataString: unscrumbled data: $data<br>\n";
  	} 		
 	
-	// Lire les deux premiers caractères pour déterminer le nb de variables
+	// Lire les deux premiers caractï¿½res pour dï¿½terminer le nb de variables
 	$nbparams = substr($data, 0, 2);
  
-	// Vérifier que l'URL contient au moins deux params
+	// Vï¿½rifier que l'URL contient au moins deux params
 	if ( $nbparams < 2 ) {
 	 $tmpArray['Errno'] = $JULA_GENERAL_ERRORS['InvalidDataFormat'];
 	 return $tmpArray;
@@ -86,22 +86,22 @@ function parseDataString($sid, $varDefArray) {
 		print "parseDataString: nb of params: $nbparams<br>\n";
 	}
 	
-	// Récupérer la chaîne contenant les valeurs des variables
+	// Rï¿½cupï¿½rer la chaï¿½ne contenant les valeurs des variables
 	$startindex = (2 + $nbparams*3);
 	$fieldsValue = substr($data, $startindex);
 	
-	// il faut verifier que la longueur de la chaine des données correspond bien à ce qui est mis dans $nbparams
+	// il faut verifier que la longueur de la chaine des donnï¿½es correspond bien ï¿½ ce qui est mis dans $nbparams
 
 	// Faire une boucle pour lire les valeurs des variables
 	$tmpTotalLength=0;
 
-	// il faut vérifier ici que la lecture s'arrête à la fin de la chaîne
+	// il faut vï¿½rifier ici que la lecture s'arrï¿½te ï¿½ la fin de la chaï¿½ne
 	for($i=0; $i<$nbparams; $i++) {
 		$tmpFieldLength = substr($data, $i*3 + 2, 3);
 		$tmpFieldValue = substr($fieldsValue, $tmpTotalLength, $tmpFieldLength);
 		$tmpTotalLength += $tmpFieldLength;
 		
-		// Affecter la valeur lue à un élément du tableau des resultats
+		// Affecter la valeur lue ï¿½ un ï¿½lï¿½ment du tableau des resultats
 		if ($i == 0) {
 			$tmpArray['merchantHash']= $tmpFieldValue;
 			if ($DBG) {
@@ -214,7 +214,7 @@ function checkRequestArray($inarr) {
 		return $errno;
 	}
 	
-	// Verifier que les valeurs sont bien typées
+	// Verifier que les valeurs sont bien typï¿½es
 	$errno=checkRequestArrayVarTypes($inarr);
 	if ($errno != 0) {
 		return $errno;
@@ -228,7 +228,7 @@ function checkRequestArrayVarNames($inarr) {
 
 	$errno=0;
 
-	// D'abord vérifier que l'array passé par le marchand ne contient pas des clefs invalides
+	// D'abord vï¿½rifier que l'array passï¿½ par le marchand ne contient pas des clefs invalides
 	foreach($inarr as $key => $val) {
 	 if (! in_array($key, $JULA_REQVAR) ) {
 		 $errno=$JULA_GENERAL_ERRORS['InvalidRequestKey'];
@@ -236,7 +236,7 @@ function checkRequestArrayVarNames($inarr) {
 	 }
 	}
 	
-	// Maintenant vérifier que toutes les variables de la transaction sont bien présentes dans  l'array passé par le marchand
+	// Maintenant vï¿½rifier que toutes les variables de la transaction sont bien prï¿½sentes dans  l'array passï¿½ par le marchand
 	foreach($JULA_REQVAR as $val) {
 	 if (!array_key_exists($val, $inarr)) {
 		 $errno=$JULA_MISSING_REQVAR_ERRNO[$val];

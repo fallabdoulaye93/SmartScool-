@@ -1,10 +1,10 @@
 <?php
 	/*****************************************************************************
-	Auteur du script : NUMHERIT
-	Société : NUMHERIT SARL
+	Auteur du script : SAMAECOLE
+	Sociï¿½tï¿½ : SAMAECOLE SARL
 	Date : 24/12/2012
 	Version : 1.0
-	Description :	Définition de fonctions communes aux marchand et serveur.
+	Description :	Dï¿½finition de fonctions communes aux marchand et serveur.
 	*****************************************************************************/
 
 require_once "JulaConf.php";
@@ -30,20 +30,20 @@ function generateRequestURL($trsdata){
 		reset($trsdata);
 	}
 
-	// Verifier ques les clés du tableau sont ceux définis dans $JULA_REQVAR
+	// Verifier ques les clï¿½s du tableau sont ceux dï¿½finis dans $JULA_REQVAR
 	$errno=checkRequestArray($trsdata);
 	if ( $errno != 0 ) {
 	 $result['Errno'] = $errno;
 	 return $result;
 	}
 
-	// Recupere le nombre de variables à envoyer (nbre d'éléments du tableau + le checksum)
+	// Recupere le nombre de variables ï¿½ envoyer (nbre d'ï¿½lï¿½ments du tableau + le checksum)
 	$nbparams = count($JULA_REQVAR) + 1;
 
 	// Calculer le checksum de toutes les variables; celles-ci sont concatenees par ordre alphabetique
 	$merchantHash = computeHash($trsdata, $JULA_MERCHANT_KEY);
 	
-	// Appeler la fonction de génération des données codées
+	// Appeler la fonction de gï¿½nï¿½ration des donnï¿½es codï¿½es
 	$data = generateDataString($trsdata, $nbparams, $merchantHash);
 		
 	// Generer l'URL contenant les donnees codees
@@ -62,7 +62,7 @@ function generateRequestURL($trsdata){
 
 
 
-// On suppose que les data ont deja eté url-decodee (urldecode) 
+// On suppose que les data ont deja etï¿½ url-decodee (urldecode) 
 function parseResponse($sid) {
 	
 	global $DBG, $JULA_RESVAR, $JULA_GENERAL_ERRORS, $JULA_MERCHANT_KEY;
@@ -82,7 +82,7 @@ function parseResponse($sid) {
  		return $trsdata;
  	}
  	
- 	// Supprimer les clefs merchantHash et Errno de l'array retourné. merchantHash sera sauvegardé dans $merchantHash
+ 	// Supprimer les clefs merchantHash et Errno de l'array retournï¿½. merchantHash sera sauvegardï¿½ dans $merchantHash
  	$merchantHash = $trsdata['merchantHash'];
  	$newTrsData = $trsdata;
  	$trsdata=null;
@@ -92,7 +92,7 @@ function parseResponse($sid) {
  		} 		
  	}
  	 	
- 	// vérifier le hash
+ 	// vï¿½rifier le hash
  	$errno = checkHash($trsdata, $JULA_MERCHANT_KEY, $merchantHash);
  	if($DBG){
  		print "parseResponse: checkHash returned $errno<br>\n";

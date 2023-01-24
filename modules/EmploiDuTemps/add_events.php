@@ -6,7 +6,7 @@ $end = $_POST['end'];
 
 // connection to the database
 try {
-$bdd = new PDO("mysql:host=mysql.numherit-labs.com;dbname=numheritlabscom230", 'sunuecoledb', '68qb5JmA');
+$bdd = new PDO("mysql:host=mysql-layefall93.alwaysdata.net;dbname=layefall93_scool", "221763_root", "layeFALL93");
 } catch(Exception $e) {
 exit('Unable to connect to database.');
 }

@@ -140,7 +140,7 @@ if ((isset($_POST['login']) && $_POST['login'] != '') && (isset($_POST['password
         </div>
         <div class="login-footer">
             <div class="pull-left">
-                &copy; 2019 NUMHERIT
+                &copy; 2019 SAMAECOLE
             </div>
 
         </div>

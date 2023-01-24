@@ -125,7 +125,7 @@ if((isset($_POST['login']) && $_POST['login'] != '') && (isset($_POST['password'
         </div>
         <div class="login-footer">
             <div class="pull-left">
-                <a href="https://www.numherit.com">&copy; 2019 NUMHERIT SA</a>
+                <a href="https://www.samaecole.com">&copy; 2019 SAMAECOLE SA</a>
             </div>
 
         </div>

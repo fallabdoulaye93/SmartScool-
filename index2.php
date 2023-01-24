@@ -93,7 +93,7 @@ if ((isset($_GET['login']) && $_GET['login'] != '') && (isset($_GET['password'])
         </div>
         <div class="login-footer">
             <div class="pull-left">
-                <a href="https://www.numherit.com">&copy; 2016 NUMHERIT</a>
+                <a href="https://www.samaecole.com">&copy; 2016 SAMAECOLE</a>
             </div>
 
         </div>

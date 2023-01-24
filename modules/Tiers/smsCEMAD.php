@@ -77,7 +77,7 @@ function gettoken()
         }
         if($res === 0){
             $messages .= "<br/>La regénération du token a échoué.<br/>Le token current expire dans moins de trois(3) jours.";
-            @alerteSMS('ibrahima.fall@numherit.com', 'Madiop GUEYE', $messages);
+            @alerteSMS('ibrahima.fall@samaecole.com', 'Madiop GUEYE', $messages);
         }
     }
     curl_close($ch);
@@ -138,7 +138,7 @@ function gettoken()
             if($err)
             {
                 $messages = "CEMAD<br/>Erreur WS Envoi SMS Orange: " . $err . "</b>.<br/>Tel: ".$destinataire."<br/>Merci de faire le necessairee (Urgence).";
-                @alerteSMS('ibrahima.fall@numherit.com', 'Ibrahima FALL', $messages);
+                @alerteSMS('ibrahima.fall@samaecole.com', 'Ibrahima FALL', $messages);
                 return -1;
             }
             else
@@ -152,13 +152,13 @@ function gettoken()
                 else if (!array_key_exists('outboundSMSMessageRequest', $json) && array_key_exists('code', $json) && (int)$json->code === 41)
                 {
                     $messages = "CEMAD<br/>Le nombre de SMS restant dans le compte est arrive a epuisement.: <b>0 sms</b>.<br/>Merci de recharger le compte (Urgence).";
-                    @alerteSMS('ibrahima.fall@numherit.com', 'Ibrahima FALL 2', $messages);
+                    @alerteSMS('ibrahima.fall@samaecole.com', 'Ibrahima FALL 2', $messages);
                     return -1;
                 }
                 else if (!array_key_exists('outboundSMSMessageRequest', $json))
                 {
                     $messages = "CEMAD<br/>Erreur WS Envoi SMS Orange: " . json_encode($json) . "</b>.<br/>Tel: ".$destinataire."<br/>Merci de faire le necessairee (Urgence).";
-                    @alerteSMS('ibrahima.fall@numherit.com', 'Ibrahima FALL 1', $messages);
+                    @alerteSMS('ibrahima.fall@samaecole.com', 'Ibrahima FALL 1', $messages);
                     return -1;
                 }
                 else
@@ -167,7 +167,7 @@ function gettoken()
                     if(($nb_sms_restant <= 500 && $nb_sms_restant % 10 === 0) || $nb_sms_restant <= 100)
                     {
                         $messages = "CEMAD<br/>Le nombre de SMS restant dans le compte est faible: <b>" . $nb_sms_restant . " sms</b>.<br/>Merci de recharger le compte (Urgence).";
-                        @alerteSMS('ibrahima.fall@numherit.com', 'Ibrahima FALL NUMH', $messages);
+                        @alerteSMS('ibrahima.fall@samaecole.com', 'Ibrahima FALL NUMH', $messages);
                     }
                     return 1;
                 }

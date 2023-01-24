@@ -31,7 +31,7 @@ $_SESSION['mois']=$_GET['mois'];
 if (isset($_GET['numfact'])) {
 $_SESSION['numfact']=$_GET['numfact'];
 }
-$_SESSION['redirection']="http://www.numherit-labs.com/sunuecole/ELEVES/payment_ok.php";
+$_SESSION['redirection']="http://www.samaecole-labs.com/sunuecole/ELEVES/payment_ok.php";
 ?>
 
 

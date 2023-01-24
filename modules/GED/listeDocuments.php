@@ -146,7 +146,7 @@ include('header.php');
                     </tr>
                     </thead>
                     <tbody>
-                    <?
+                    <?php
                     foreach ($query_rq_doc->fetchAll() as $document) {
                         /*$even=new Evenement();*/
                         ?>
@@ -177,7 +177,7 @@ include('header.php');
 if (isset($_POST["IDTYPEDOCADMIN"])) {
     echo "
         <script>
-            ($('#pdf-file'))[0].href = 'http://www.numherit-labs.com/sunuecole/ged/type_doc_pdf.php?IDTYPEDOCADMIN=".$lib->securite_xss($_POST['IDTYPEDOCADMIN'])."&IDETABLISSEMENT=".$lib->securite_xss($_POST['IDETABLISSEMENT'])."&id_eleve=".$lib->securite_xss($_POST['IDINDIVIDU'])."';
+            ($('#pdf-file'))[0].href = 'http://www.samaecole-labs.com/sunuecole/ged/type_doc_pdf.php?IDTYPEDOCADMIN=".$lib->securite_xss($_POST['IDTYPEDOCADMIN'])."&IDETABLISSEMENT=".$lib->securite_xss($_POST['IDETABLISSEMENT'])."&id_eleve=".$lib->securite_xss($_POST['IDINDIVIDU'])."';
              ($('#pdf-file'))[0].click();
         </script>
     ";

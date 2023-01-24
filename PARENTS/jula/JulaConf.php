@@ -1,14 +1,14 @@
 <?php
 	/*****************************************************************************
 	Auteur du script : Bocar SY.
-	Soci�t� : NUMHERIT.
+	Soci�t� : SAMAECOLE.
 	Description : Fichier de configuration n�cessaire aux APIs 
 	*****************************************************************************/
 	
 	//$JULA_SRV_URL = "http://www.jula.com/api/verif.php";
-	//$POSTECASH_SRV_URL = "https://www.postecash.sn/ApiNumHerit/main.php";
-	$JULA_SRV_URL = "http://www.numherit-labs.com/jula/apiG/verif_new.php";
-	$POSTECASH_SRV_URL = "http://www.numherit-labs.com/postecash/ApiNumHeritG/main.php";
+	//$POSTECASH_SRV_URL = "https://www.postecash.sn/Apisamaecole/main.php";
+	$JULA_SRV_URL = "http://www.samaecole-labs.com/jula/apiG/verif_new.php";
+	$POSTECASH_SRV_URL = "http://www.samaecole-labs.com/postecash/ApisamaecoleG/main.php";
 
 	
 

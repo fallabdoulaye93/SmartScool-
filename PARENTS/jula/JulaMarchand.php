@@ -1,7 +1,7 @@
 <?php
 	/*****************************************************************************
-	Auteur du script : NUMHERIT
-	Soci�t� : NUMHERIT SARL
+	Auteur du script : SAMAECOLE
+	Soci�t� : SAMAECOLE SARL
 	Date : 24/12/2012
 	Version : 1.0
 	Description :	D�finition de fonctions communes aux marchand et serveur.

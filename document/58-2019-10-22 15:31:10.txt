@@ -4,17 +4,17 @@ vpn.orange-sonatel.com
 
 
 CNX
-mouhamed.seck@numherit.com
+mouhamed.seck@samaecole.com
 53cgzV
 
 
-papa.ngom@numherit.com
+papa.ngom@samaecole.com
 
-ibou.balde@numherit.com
+ibou.balde@samaecole.com
 
-stagiaire.dev1@numherit.com
+stagiaire.dev1@samaecole.com
 
-cheikh.khouma@numherit.com
+cheikh.khouma@samaecole.com
 
 non bio = Standalone
 bio = Client Bundle Internet
